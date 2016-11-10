@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下白色 -->
+    <item android:state_checked="true" android:color="@color/blue"/>
+    <item android:state_pressed="true" android:color="@color/blue"/>
+    <!-- 浅灰 -->
+    <item android:state_pressed="false" android:color="@color/black_6"/>
+    <item android:state_checked="false" android:color="@color/black_6"/>
+
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization.yhwapp.com.view.HYViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vp_banner"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@android:color/white"
+    app:circle_normal="@color/default_line_indicator_unselected_color"
+    app:circle_selected="@color/default_line_indicator_selected_color"
+    app:marker_local="center" />

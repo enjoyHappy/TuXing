@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/frag4_rl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/default_line_indicator_selected_color"
+        android:paddingLeft="20dp">
+
+        <organization.yhwapp.com.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/frg3_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@color/gray"
+            app:border_color="@color/white"
+            app:border_width="2px"
+            app:oval="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/frg3_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fg3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_main_size" />
+
+            <TextView
+                android:id="@+id/fg3_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="好友印象标签"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content_sub_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fg3_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:text="编辑"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fg3_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button_white"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="个人资料" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/driver" />
+
+    <TextView
+        android:id="@+id/fg3_friends"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_button_white"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="我的好友" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/driver" />
+
+    <TextView
+        android:id="@+id/fg3_message"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_button_white"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="我的消息" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/driver" />
+
+    <TextView
+        android:id="@+id/fg3_activity"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_button_white"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="我的活动" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/driver" />
+
+    <TextView
+        android:id="@+id/fg3_blogs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_button_white"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="我的博客" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/driver" />
+
+
+    <TextView
+        android:id="@+id/fg3_setting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_button_white"
+        android:clickable="true"
+        android:drawableRight="@drawable/ic_more"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="设置" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/driver" />
+</LinearLayout>

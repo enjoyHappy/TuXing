@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_button_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <organization.yhwapp.com.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_msg_friends_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@color/blue"
+        app:corner_radius="3dp"
+        app:oval="false" />
+
+    <TextView
+        android:id="@+id/item_msg_friends_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_msg_friends_img"
+        android:padding="3dp"
+        android:text="夜尽天明"
+        android:textColor="@color/black_3"
+        android:textSize="@dimen/title_main_size" />
+
+    <TextView
+        android:id="@+id/item_msg_friends_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_msg_friends_name"
+        android:layout_toRightOf="@+id/item_msg_friends_img"
+        android:padding="3dp"
+        android:text="消息......      消息.......消息"
+        android:textColor="@color/black_6"
+        android:textSize="@dimen/content_sub_size" />
+
+</RelativeLayout>

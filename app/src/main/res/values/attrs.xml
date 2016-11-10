@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HYViewPager">
+        <attr name="circle_normal" format="color"></attr>
+        <attr name="circle_selected" format="color"></attr>
+
+        <attr name="marker_local" format="enum">
+            <enum name="center" value="1002"></enum>
+            <enum name="right" value="1001"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+</resources>

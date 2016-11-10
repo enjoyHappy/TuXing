@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/init_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/info_head_ll"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_button_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="个性头像"
+                    android:textSize="@dimen/content_main_size" />
+
+                <organization.yhwapp.com.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/info_head_iv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="5dp"
+                    android:src="@color/gray"
+                    app:border_color="@color/driver"
+                    app:border_width="1px"
+                    app:oval="true" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/info_name_ll"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_button_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="昵称"
+                    android:textSize="@dimen/content_main_size" />
+
+                <TextView
+                    android:id="@+id/info_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="赶紧取个有逼格的昵称"
+                    android:textSize="@dimen/font_size_13" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_more"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/driver" />
+
+            <LinearLayout
+                android:id="@+id/info_sex_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_line_height"
+                android:background="@drawable/selector_button_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="性别"
+                    android:textSize="@dimen/content_main_size" />
+
+                <TextView
+                    android:id="@+id/info_sex_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="选择性别"
+                    android:textSize="@dimen/font_size_13" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/driver" />
+
+            <LinearLayout
+                android:id="@+id/info_date_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_line_height"
+                android:background="@drawable/selector_button_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="出生年月"
+                    android:textSize="@dimen/content_main_size" />
+
+                <TextView
+                    android:id="@+id/info_date_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入您的出生年月"
+                    android:textSize="@dimen/font_size_13" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_more"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/driver" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

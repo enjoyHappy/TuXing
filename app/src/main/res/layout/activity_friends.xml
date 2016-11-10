@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/init_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <organization.yhwapp.com.view.LetterListView
+            android:id="@+id/letter"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/friends_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/letter"
+            android:background="@color/white">
+
+            <ListView
+                android:id="@+id/friends_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/driver"
+                android:dividerHeight="0.5dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/letter"
+            android:background="@color/driver">
+
+            <TextView
+                android:id="@+id/top_char"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="3dip"
+                android:text="A" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
